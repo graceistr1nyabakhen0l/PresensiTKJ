@@ -90,4 +90,4 @@ app.delete('/pegawai/:id', (req, res) => {
 });
 
 // Port 5000 (Pastikan sudah allow di ufw Ubuntu)
-app.listen(5000, () => console.log('Server berjalan di: http://localhost:5000'));
+app.listen(5000, () => console.log('Server berjalan di: http://10.103.132.15.78:5000'));
