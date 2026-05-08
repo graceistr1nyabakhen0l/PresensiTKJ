@@ -90,4 +90,8 @@ app.delete('/pegawai/:id', (req, res) => {
 });
 
 // Port 5000 (Pastikan sudah allow di ufw Ubuntu)
-app.listen(5000, () => console.log('Server berjalan di: http://10.103.132.15.78:5000'));
+const PORT = 5000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server berjalan di port ${PORT}`);
+    console.log(`Akses melalui: http://10.132.15.78:${PORT}`);
+});
